@@ -1,0 +1,710 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: monospace;
+}
+
+.container .error-success {
+    padding: 30px;
+}
+
+.container .error-success .error {
+    background-color: rgb(228, 112, 112);
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .error-success .error:hover {
+    background-color: rgb(249, 150, 150);
+}
+
+.container .error-success .success {
+    background-color: rgb(191, 226, 121);
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .error-success .success:hover {
+    background-color: rgb(220, 246, 168);
+}
+
+.container .error-success p {
+    font-style: italic;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+}
+
+header.scrollDown {
+    background-color: rgba(42, 42, 42, 0.824);
+}
+
+header.scrollDown .logo a{
+    color: white;
+    transition: 0.5s;
+}
+
+header.scrollDown #fa-solid{
+    color: white;
+    transition: 0.5s;
+}
+
+header.scrollDown #fa-solid:hover{
+    color: rgb(249, 150, 150)
+}
+
+header.scrollDown .logo a:hover{
+    color: rgb(249, 150, 150)
+}
+
+header nav {
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .container-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header nav .container-icon .fa-solid {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(42, 42, 42);
+}
+
+header nav .icono-menu {
+    position: relative;
+}
+
+header nav .logo {
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(42, 42, 42);
+}
+
+header nav .container-items {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0px 0px 2px 2px rgba(66, 66, 66, 0.755);
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 71px;
+    left: 0;
+    transition: all .5s ease;
+}
+
+header nav .container-items ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+header nav .container-items a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header nav .container-items ul li {
+    position: relative;
+}
+
+
+header nav .container-items ul .dropdown-container:hover {
+    margin-bottom: 100px;
+}
+
+header nav .container-items ul li a:hover {
+    background-color: white;
+    color: rgb(42, 42, 42);
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+header nav .container-items ul li .dropdown li {
+    display: block;
+}
+
+header nav .container-items .dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: rgb(85, 85, 85);
+    width: 90%;
+    border-radius: 15px;
+}
+
+
+header nav .container-items ul li:hover .dropdown {
+    display: block;
+}
+
+.active {
+    transform: translate(-1500px);
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+#main-menu {
+    background-image: url(/static/img/background-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-menu main .container h1 {
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#main-menu main .container h3 {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#main-menu main .container div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#main-menu main .container div button {
+    padding: 10px;
+    background-color: rgb(194, 77, 77);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#main-menu main .container div button:hover {
+    background-color: rgb(249, 150, 150);
+
+}
+
+
+#main-menu main .container div button:active {
+    background-color: rgb(249, 150, 150);
+}
+
+
+#main-menu main .container div .button {
+    padding: 10px;
+    background-color: rgb(140, 194, 33);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#main-menu main .container div .button:hover {
+    background-color: rgb(165, 204, 89);
+
+}
+
+
+#main-menu main .container div .button:active {
+    background-color: rgb(202, 231, 144);
+}
+
+#main-menu main .container div button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.list {
+    font-size: 20px;
+    align-items: start;
+}
+
+.list .container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    overflow-x: auto;
+}
+
+
+.list .container table {
+    color: black;
+    table-layout: fixed;
+}
+
+
+
+.list .container h1 {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.list table tbody th {
+    font-size: 18px;
+    padding: 10px;
+    text-align: start;
+}
+
+.list td {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.list td:hover {
+    background-color: rgb(249, 150, 150);
+    transition: 0.5s;
+}
+
+.list th {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+.list th,
+tr,
+td {
+    border: 2px solid rgb(11, 10, 10);
+}
+
+.list tbody a {
+    text-decoration: none;
+    color: black;
+}
+
+.list tbody i {
+    color: black;
+    padding: 5px;
+}
+
+footer {
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .container {
+    text-align: center;
+
+}
+
+footer h2 {
+    padding: 40px;
+}
+
+footer .container div {
+    padding: 10px;
+}
+
+footer .container div .content {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div h3 {
+    font-style: italic;
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+    color: white;
+}
+
+footer div li {
+    list-style: none;
+    color: black;
+    font-style: italic;
+    padding: 8px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer div a:hover {
+    background-color: rgba(42, 42, 42, 0.824);
+    transition: 0.5s;
+    color: white;
+}
+
+footer div a:active {
+    background-color: rgb(66, 66, 66);
+    color-scheme: white;
+}
+
+footer .footer2 {
+    height: 50vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 42, 42);
+}
+
+footer .footer2 p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+}
+
+footer .footer2 .container {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    width: 60%;
+}
+
+footer .footer2 .container h2 {
+    padding: 15px;
+}
+
+footer .footer2 .container .social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer2 .container .social i {
+    font-size: 35px;
+    color: rgb(85, 85, 85);
+    transform: .3s;
+    cursor: pointer;
+}
+
+footer .footer2 .container .social i:hover {
+    color: rgb(228, 112, 112);
+    transition: .3s;
+}
+
+footer .footer2 .container .social i:active {
+    color: rgb(228, 112, 112);
+    transition: .5s;
+}
+
+.arrowUp {
+    position: fixed;
+    width: 40px;
+    right: -100px;
+    bottom: 20px;
+    transition: all 0.5s;
+}
+
+.arrowUp .fa-solid {
+    background-color: rgb(253, 0, 0);
+    color: white;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+    transition: all 0.5s;
+}
+
+.arrowUp .fa-solid:hover {
+    background-color: white;
+    color: black;
+}
+
+.arrowUp .fa-solid:active {
+    background-color: rgb(249, 150, 150);
+}
+
+/* forms */
+
+#forms {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#forms form {
+    font-size: 40px;
+    background-color: rgb(42, 42, 42);
+    padding: 25px;
+    box-shadow: 7px 15px 30px rgba(0, 0, 0, 0.777);
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#forms form .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms form .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms form .title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+#forms form .input-class {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#forms form .input-content {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+#forms form .input-file[type="file"] {
+    display: none;
+}
+
+#forms form label {
+    display: inline-block;
+    color: white;
+    background-color: rgb(249, 150, 150);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s;
+}
+
+#forms form label:hover {
+    background-color: rgb(228, 112, 112);
+    transition: .5s;
+
+}
+
+#forms form label:active {
+    background-color: rgb(194, 77, 77);
+    transition: .5s;
+}
+
+#forms form .button-form {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+    color: rgb(66, 66, 66);
+    outline: none;
+    margin-bottom: 15px;
+    background-color: rgb(228, 112, 112);
+    color: white;
+    transform: .5s;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#forms form .button-form:hover {
+    background-color: rgb(171, 57, 57);
+    transition: .5s;
+}
+
+#forms form .button-form:active {
+    background-color: rgb(228, 112, 112);
+}
+
+#forms form a {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+    color: rgb(66, 66, 66);
+    outline: none;
+    margin-bottom: 15px;
+    background-color: rgb(228, 112, 112);
+    color: white;
+    transform: .5s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#forms form a {
+    text-decoration: none;
+    color: white;
+}
+
+#forms form a:hover {
+    background-color: rgb(171, 57, 57);
+    transition: .5s;
+}
+
+#forms form a:active {
+    background-color: rgb(228, 112, 112);
+}
+
+@media (min-width:650px) {
+    #forms form {
+        width: 80%;
+    }
+    footer .container .footer1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .container .footer1 h3 {
+        font-size: 20px;
+    }
+
+    footer .container .footer1 .content a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    footer .footer2 .container .social i {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width:900px) {
+    #forms form {
+        width: 60%;
+    }
+    footer .container .footer1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .container .footer1 h3 {
+        font-size: 20px;
+    }
+
+    footer .container .footer1 .content a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    footer .footer2 .container .social i {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+}
+
+
+@media (min-width:1200px) {
+
+    header nav .container-items {
+        width: 30%;
+    }
+
+    footer .container .footer1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .container .footer1 h3 {
+        font-size: 20px;
+    }
+
+    footer .container .footer1 .content a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    footer .footer2 .container .social i {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    /* lists */
+
+    .list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list .container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    #forms {
+        display: flex;
+        justify-content: center;
+    }
+
+    #forms form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
