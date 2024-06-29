@@ -57,21 +57,21 @@ header.scrollDown {
     background-color: rgba(42, 42, 42, 0.824);
 }
 
-header.scrollDown .logo a{
+header.scrollDown .logo a {
     color: white;
     transition: 0.5s;
 }
 
-header.scrollDown #fa-solid{
+header.scrollDown #fa-solid {
     color: white;
     transition: 0.5s;
 }
 
-header.scrollDown #fa-solid:hover{
+header.scrollDown #fa-solid:hover {
     color: rgb(249, 150, 150)
 }
 
-header.scrollDown .logo a:hover{
+header.scrollDown .logo a:hover {
     color: rgb(249, 150, 150)
 }
 
@@ -609,6 +609,7 @@ footer .footer2 .container .social i:active {
     #forms form {
         width: 80%;
     }
+
     footer .container .footer1 {
         display: flex;
         justify-content: space-evenly;
@@ -634,6 +635,7 @@ footer .footer2 .container .social i:active {
     #forms form {
         width: 60%;
     }
+
     footer .container .footer1 {
         display: flex;
         justify-content: space-evenly;
