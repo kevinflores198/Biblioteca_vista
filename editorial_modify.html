@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 
 <body>
@@ -58,75 +58,21 @@
         </nav>
     </header>
 
-    <div id="list" class="list">
-        <div class="container">
-            <table>
-                <h1>Editorial table</h1>
-                <tr>
-                    <th scope="col">Editorial ID</th>
-                    <th scope="col">Editorial name</th>
-                    <th scope="col">Actions</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>Editorial</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i><a href="editorial_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div id="forms">
+        <form method="POST">
+            <div>
+                <h3 class="title">Edit editorial</h3>
+            </div>
+            <div class="container">
+                <input hidden name="ID">
+                <div class="input-class">
+                    <input type="text" class="input-content" placeholder="editorial name">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button-form" type="submit">Update</button>
+            </div>
+        </form>
     </div>
 
     <footer>
@@ -179,10 +125,10 @@
     </footer>
 
     <div id="up" class="arrowUp">
-        <a href="#list"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#forms"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

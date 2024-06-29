@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
-
 <body>
+
     <header>
         <nav>
             <div class="container-icon">
@@ -59,45 +60,28 @@
     </header>
 
     <div id="forms">
-        <form method="POST">
+        <form method="post">
             <div>
-                <h3 class="title">Edit book</h3>
-            </div>
-            <div class="container">
-                <div class="input-class">
-                    <input type="number" class="input-content" name="isbn" placeholder="New isbn">
+                <div>
+                    <h3 class="title">Access to Biblioteca</h3>
                 </div>
-                <div class="input-class">
-                    <input type="text" class="input-content" name="title" placeholder="New book title">
-                </div>
-                <div class="input-class">
-                    <input type="number" class="input-content" name="type" placeholder="New amount">
-                </div>
-                <div class="input-class">
-                    <select class="input-content" name="idAutor">
-                        <option class="input-content">Select Autor</option>
-                        <option class="input-content">Autor 1</option>
-                        <option class="input-content">Autor 1</option>
-                        <option class="input-content">Autor 1</option>
-                        <option class="input-content">Autor 4</option>
-                    </select>
-                </div>
-                <div class="input-class">
-                    <select class="input-content" name="idEditorial">
-                        <option class="input-content">Select Editorial</option>
-                        <option class="input-content">Editorial 1</option>
-                        <option class="input-content">Editorial 1</option>
-                        <option class="input-content">Editorial 1</option>
-                        <option class="input-content">Editorial 4</option>
-                    </select>
+
+                <div class="container">
+                    <div class="input-class">
+                        <input class="input-content" type="text" name="email" placeholder="email">
+                    </div>
+                    <div class="input-class">
+                        <input class="input-content" type="password" name="password" placeholder="password">
+                    </div>
                 </div>
             </div>
             <div class="buttons">
-                <button class="button-form" type="submit">Update</button>
+                <button class="button-form" type="submit">Access</button>
+                <a href="index.html">Back to index</a>
             </div>
         </form>
     </div>
-
+    
     <footer>
         <div class="container">
             <h2>▼ More about us ▼</h2>
@@ -151,8 +135,7 @@
         <a href="#forms"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

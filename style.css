@@ -180,7 +180,7 @@ header nav .container-items ul li:hover .dropdown {
 }
 
 #main-menu {
-    background-image: url(/static/img/background-main.png);
+    background-image: url(background-main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

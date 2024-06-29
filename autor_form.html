@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="container-icon">
@@ -18,7 +19,7 @@
                     <i id="fa-solid" class="fa-solid fa-bars"></i>
                 </div>
                 <div class="logo">
-                    <a href="main.html">Biblioteca</a>
+                    <a href="index.html">Biblioteca</a>
                 </div>
             </div>
             <div id="container-items" class="container-items active">
@@ -58,24 +59,29 @@
         </nav>
     </header>
 
-    <div id="main-menu">
-        <main>
+    <div id="forms">
+        <form action="" method="POST">
+            <div>
+                <h3 class="title">Charge autor here</h3>
+            </div>
+
             <div class="container">
-                <h1>BIBLIOTECA</h1>
-                <h3>Welcome back "Kevin"<a href="#"></a></h3>
-                <div>
-                    <button class="button"><a href="book_list.html">Book list</a></button>
+                <div class="input-class">
+                    <input type="text" class="input-content" placeholder="autor name">
                 </div>
             </div>
-        </main>
+            <div class="buttons">
+                <button type="submit" class="button-form">Submit</button>
+            </div>
+        </form>
     </div>
-    
+
     <footer>
         <div class="container">
             <h2>▼ More about us ▼</h2>
             <div class="footer1">
                 <div>
-                    <h3>News</h3>
+                        <h3>News</h3>
                     <div class="content">
                         <li><a href="">Where do we help?</a></li>
                         <li><a href="">How to learn more</a></li>
@@ -120,10 +126,10 @@
     </footer>
 
     <div id="up" class="arrowUp">
-        <a href="#main-menu"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#forms"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

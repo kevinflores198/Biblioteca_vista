@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
-
 <body>
     <header>
         <nav>
@@ -59,18 +58,34 @@
     </header>
 
     <div id="forms">
-        <form method="POST">
+        <form method="post" enctype="multipart/form-data">
             <div>
-                <h3 class="title">Edit autor</h3>
+                <h3 class="title">Sign in!</h3>
             </div>
+
             <div class="container">
-                <input hidden name="ID">
                 <div class="input-class">
-                    <input type="text" class="input-content" placeholder="autor name">
+                    <input class="input-content" type="text" name="name" placeholder="name">
+                </div>
+                <div class="input-class">
+                    <input class="input-content" type="text" name="email" placeholder="email">
+                </div>
+
+                <div class="input-class">
+                    <input class="input-file" id="upload" type="file" name="archive">
+                    <label for="upload">Upload file...</label>
+                </div>
+                <div class="input-class">
+                    <input class="input-content" type="password" name="password" placeholder="password">
+                </div>
+                <div class="input-class">
+                    <input class="input-content" type="password" name="password2" placeholder="repeat password">
                 </div>
             </div>
+
             <div class="buttons">
-                <button class="button-form" type="submit">Update</button>
+                <button class="button-form" type="submit">Submit</button>
+                <a href="index.html">Back to index</a>
             </div>
         </form>
     </div>
@@ -128,7 +143,7 @@
         <a href="#forms"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
-
 <body>
     <header>
         <nav>
@@ -58,145 +57,130 @@
         </nav>
     </header>
 
-    <div id="lists" class="list">
+    <div id="list" class="list">
         <div class="container">
             <table>
-                <h1>Autor table</h1>
+                <h1>Book table</h1>
                 <tr>
-                    <th scope="col">Autor name</th>
-                    <th scope="col">Autor ID</th>
+                    <th scope="col">Book name</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Number of books</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Editorial</th>
                     <th scope="col">Actions</th>
                 </tr>
-                <tbody>
+                <tbody th:each="book : ${books}">
                     <tr>
-                        <td>Autor</td>
+                        <td>Book</td>
                         <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
                         <td>
                             <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
+                            <a href="book_modify.html">Modify </a>
                         </td>
                     </tr>
                     <tr>
-                        <td>Autor</td>
+                        <td>Book</td>
                         <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
                         <td>
                             <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
+                            <a href="book_modify.html">Modify </a>
                         </td>
                     </tr>
                     <tr>
-                        <td>Autor</td>
+                        <td>Book</td>
                         <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
                         <td>
                             <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
+                            <a href="book_modify.html">Modify </a>
                         </td>
                     </tr>
                     <tr>
-                        <td>Autor</td>
+                        <td>Book</td>
                         <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
                         <td>
                             <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Book</td>
+                        <td class="id-product" scope="row">1234</td>
+                        <td>4561</td>
+                        <td>Autor</td>
+                        <td>Editorial</td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <a href="book_modify.html">Modify </a>
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Autor</td>
-                        <td class="id-product" scope="row">1234</td>
-                        <td>
-                            <i class="fa-solid fa-pen"></i>
-                            <a href="autor_modify.html">Modify </a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -252,10 +236,10 @@
     </footer>
 
     <div id="up" class="arrowUp">
-        <a href="#lists"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#list"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

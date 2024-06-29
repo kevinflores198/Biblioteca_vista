@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
-
 <body>
     <header>
         <nav>
@@ -18,7 +17,7 @@
                     <i id="fa-solid" class="fa-solid fa-bars"></i>
                 </div>
                 <div class="logo">
-                    <a href="index.html">Biblioteca</a>
+                    <a href="main.html">Biblioteca</a>
                 </div>
             </div>
             <div id="container-items" class="container-items active">
@@ -58,39 +57,18 @@
         </nav>
     </header>
 
-    <div id="forms">
-        <form method="post" enctype="multipart/form-data">
-            <div>
-                <h3 class="title">Sign in!</h3>
-            </div>
-
+    <div id="main-menu">
+        <main>
             <div class="container">
-                <div class="input-class">
-                    <input class="input-content" type="text" name="name" placeholder="name">
-                </div>
-                <div class="input-class">
-                    <input class="input-content" type="text" name="email" placeholder="email">
-                </div>
-
-                <div class="input-class">
-                    <input class="input-file" id="upload" type="file" name="archive">
-                    <label for="upload">Upload file...</label>
-                </div>
-                <div class="input-class">
-                    <input class="input-content" type="password" name="password" placeholder="password">
-                </div>
-                <div class="input-class">
-                    <input class="input-content" type="password" name="password2" placeholder="repeat password">
+                <h1>BIBLIOTECA</h1>
+                <h3>Welcome back "Kevin"<a href="#"></a></h3>
+                <div>
+                    <button class="button"><a href="book_list.html">Book list</a></button>
                 </div>
             </div>
-
-            <div class="buttons">
-                <button class="button-form" type="submit">Submit</button>
-                <a href="index.html">Back to index</a>
-            </div>
-        </form>
+        </main>
     </div>
-
+    
     <footer>
         <div class="container">
             <h2>▼ More about us ▼</h2>
@@ -141,10 +119,10 @@
     </footer>
 
     <div id="up" class="arrowUp">
-        <a href="#forms"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#main-menu"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <script src="/static/script/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
