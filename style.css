@@ -131,7 +131,7 @@ header nav .container-items a {
     cursor: pointer;
     color: white;
     padding: 10px 50px;
-    font-size: 20px;
+    font-size: 16px;
     transition: 0.5s;
 }
 
@@ -629,6 +629,10 @@ footer .footer2 .container .social i:active {
         font-size: 40px;
     }
 
+    header nav .container-items a{
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width:900px) {
@@ -655,10 +659,19 @@ footer .footer2 .container .social i:active {
         font-size: 40px;
     }
 
+    header nav .container-items a{
+        font-size: 30px;
+    }
+
+
 }
 
 
 @media (min-width:1200px) {
+
+    header nav .container-items a{
+        font-size: 30px;
+    }
 
     header nav .container-items {
         width: 30%;
